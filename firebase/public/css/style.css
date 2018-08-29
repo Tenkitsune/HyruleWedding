@@ -1,0 +1,208 @@
+@font-face {
+    font-family: TriforceFont;
+    src: url('../fonts/Triforce.ttf');
+}
+
+@font-face {
+    font-family: GanonFont;
+    src: url('../fonts/CalamitySans/Calamity-Regular.woff');
+}
+
+.cust-nav {
+    background-color: #FEF9E7;
+}
+
+    .cust-nav .cust-nav-text {
+        font-weight: bold;
+        color: green !important;
+    }
+
+body {
+    padding-top: 40px;
+    background: url('../images/2h.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: TriforceFont;
+    color: #FFBD2F;
+    /*color: #fdffe0;*/
+    font-size: 65px;
+}
+
+.maincontent {
+    /*background: rgba(74, 186, 145, 0.25);*/
+    /*background: rgba(212, 180, 81, 0.25);*/
+    /*background-color: #92c582;*/
+    font-family: GanonFont;
+    color: white;
+}
+
+.separatorimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainimg {
+    display: block;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yellowborderdiv {
+    padding-top: 500px;
+    background: rgba(0, 0, 0, 0.50);
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image: url('../images/yellowbordersmol.png') 41% stretch;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.greenborderdiv {
+    padding-top: 500px;
+    background: rgba(0, 0, 0, 0.50);
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image: url('../images/greenbordersmol.png') 41% stretch;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.woodborderdiv {
+    padding-top: 500px;
+    background: rgb(0, 0, 0);
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image: url('../images/woodborder.png') 41% stretch;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.custModalTop {
+    padding: 15px;
+}
+
+.custModalText {
+    text-align: center;
+}
+
+.custModalBodyText {
+    font-size: 30px;
+}
+
+.mapimg {
+    border: 10px solid transparent;
+    background: white;
+}
+
+/* 1200px and larger: */
+@media only screen and (min-width: 1200px) {
+    .mapimg {
+        border: 10px solid transparent;
+        background: white;
+        margin-left: 7.5%;
+    }
+}
+
+.realmapimg {
+    margin-left: 22.5%
+}
+
+.fontent {
+    font-size: 21px;
+}
+
+@media (min-width: 768px) {
+    .custdiv {
+        max-width: 47% !important;
+    }
+}
+
+.custdiv {
+    margin-top: 50px !important;
+}
+
+.leftabouttitle {
+    font-family: TriforceFont;
+    color: pink;
+    font-size: 30px;
+}
+
+.rightabouttitle {
+    font-family: TriforceFont;
+    color: wheat;
+    font-size: 30px;
+}
+
+.imageresize {
+    margin: auto;
+}
+
+.custom-footer {
+    color: #0B5345;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.modal-custfooter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-link {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.linktext {
+    font-family: TriforceFont;
+    color: wheat;
+    font-size: 30px;
+}
+
+    .linktext:hover {
+        color: #D3FFAC;
+    }
+
+/*RSVP Modal CSS*/
+
+.rsvpModalTop {
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    .modal-xl {
+        width: 90%;
+        max-width: 1200px;
+    }
+}
+
+.rsvpModalText {
+    font-size: 35px;
+    text-align: center;
+}
+
+.rsvpModalBodyText {
+    font-size: 20px !important;
+}
+
+.fairyimg {
+    display: none;
+    width: 48px;
+    height: 48px;
+    position: fixed;
+}
+
+.test {
+    width: 48px;
+    height: 48px;
+}
+
+div.imgthing:hover .fairyimg {
+    display: inline;
+}

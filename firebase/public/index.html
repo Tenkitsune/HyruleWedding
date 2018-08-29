@@ -1,0 +1,580 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Jon and Heather's Hyrulean Wedding</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="icon"
+          type="image/png"
+          href="images/heartsingle.png">
+
+</head>
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 150
+                    }, 800, 'swing', function () {
+                        //this breaks scrolling function, but hash in URL isn't needed anyway
+                        //window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+    <script>
+        var config = {
+            authDomain: "hyrulewedding-84f8b.firebaseapp.com",
+            databaseURL: "https://hyrulewedding-84f8b.firebaseio.com/"
+        };
+
+        firebase.initializeApp(config);
+    </script>
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light cust-nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="container">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item"><a class="nav-link cust-nav-text" href="#home" data-offset="500">Home</a></li>
+                        <li class="nav-item"><a class="nav-link cust-nav-text" href="#about">Our Story</a></li>
+                        <li class="nav-item"><a class="nav-link cust-nav-text" href="#map">Map</a></li>
+                        <li class="nav-item"><a class="nav-link cust-nav-text" href="#registry">Registry</a></li>
+                        <li class="nav-item"><a class="nav-link cust-nav-text" href="#RSVP">RSVP</a></li>
+                        <li class="nav-item"><a class="nav-link cust-nav-text" href="#events">Events</a></li>
+                        <li class="nav-item"><a class="nav-link cust-nav-text" href="#accomodations">Accommodations</a></li>
+                        <li class="nav-item"><a class="nav-link cust-nav-text" href="#pictures">Pictures</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container maincontent" id="maincontent">
+        <div class="container-fluid"><img class="img-responsive mainimg" src="images/triheartline.png" alt="ThreeHeartsDivider"></div><br /><br />
+        <div class="container" id="home">
+            <h1 class="text-center">Jon and Heather's Hyrulean Wedding</h1>  <br /><br />
+        </div>
+        <div class="container greenborderdiv">
+            <h2 class="text-center">We are getting married! Save the date!</h2><br /><br />
+            <p class="text-center lead fontent">Saturday, November 3rd, 2018</p>
+        </div><br />
+        <div class="container-fluid"><img class="img-responsive mainimg" src="images/triheartline.png" alt="ThreeHeartsDivider"></div><br /><br />
+        <div class="container yellowborderdiv">
+            <h2 class="text-center">Welcome</h2><br /><br />
+            <p class="lead fontent">
+                Thank you very much for taking the time to visit our website! We are excited to have the opportunity to share this wonderful life event with our friends and family. Please feel free to read about our story and all about the events for our big day. You can also read about some other information you can use to help you plan for your visit with us on this day. <br /><br />
+                During our journey on finding the perfect venue, we decided that the Ozarks would be the perfect place with its beautiful scenery and homey feel. And so, our celebration will be taking place at the beautifully scenic Big Cedar Lodge in Ridgedale, Missouri on November 3rd, 2018. Please know that this is a resort-style location, so in additional to the chapel and reception hall, there will be additional services and accommodation options available on-site. We do hope that you choose to join us in this joyful celebration!<br /><br />
+                For your reference, the resort is about 15 minutes south of Branson, MO, or about 3 hours and 40 minutes southwest of St. Louis.<br /><br />
+                <h2 class="text-center">About RSVP</h2><br /><br />
+            <p class="lead fontent">Please also note that once the invitations are sent out, we will be offering you the option to RSVP right here on this page! So, be sure to check back on this site when you receive your invitation sometime in late August if you would like to respond online. You will still have the option to RSVP through regular post mail, so feel free to respond in whichever way you choose!
+        </div><br />
+        <div class="container-fluid"><img class="img-responsive mainimg" src="images/triheartline.png" alt="ThreeHeartsDivider"></div>
+        <div class="row" style="padding-right: 15px; padding-left: 15px;" id="about">
+            <div class="col-md-6 custdiv greenborderdiv">
+                <img class="img-responsive imageresize mx-auto d-block" style="padding-top: 33px;" src="images/ZeldaOutlineLg.png" alt="ZeldaOutline">
+                <p class="text-center leftabouttitle">The Princess</p>
+                <p>
+                    I'd like to give you a warning up front that this is about to get extremely mushy. If you are not willing or prepared to read an excruciatingly sentimental love story, please stop here, because this synopsis has been cooked down to a mash of applesauce. Really. But, instead of me sitting...
+                    <a class="nav-link cust-nav-text" href="#" data-toggle="modal" data-target="#readMore">Read more</a>
+                </p>
+            </div>
+            <div class="col-md-6 ml-auto custdiv greenborderdiv">
+                <img class="img-responsive imageresize mx-auto d-block" src="images/LinkOutlineLg.png" alt="NotZeldaOutline">
+                <p class="text-center rightabouttitle">The Hero</p>
+                <p>
+                    Hmmm what to say as the Heather has summed up how we met and how I proposed… Its really funny how life throws you something when you never expect it. When I first met Heather I never thought...
+                    <a class="nav-link cust-nav-text" href="#" data-toggle="modal" data-target="#readMore2">Read more</a>
+                </p>
+            </div>
+        </div>
+        <br />
+        <div class="container-fluid"><img class="img-responsive mainimg" src="images/triheartline.png" alt="ThreeHeartsDivider"></div><br /><br />
+        <div class="container yellowborderdiv">
+            <h2 class="text-center">Location:</h2>
+            <h2 class="text-center">Big Cedar Lodge,  Ridgedale, MO</h2> <br /><br />
+            <div>
+                <img class="img-fluid mapimg" src="images/pooreditbotwmap.png" alt="Hyrle Map">
+            </div>
+            <br /><br /><p class="text-center lead fontent">
+                * DISCLAIMER * : The above image is not an accurate representation of the location of the wedding venue. It's just there to be funny.<br /><br />
+                For the actual map from the land of the United States, please see below:<br /><br />
+            </p>
+            <div class="embed-responsive embed-responsive-16by9" id="map">
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.686711267127!2d-93.27731093829141!3d36.53755192675496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87cee2c3cad56919%3A0xcb52c7dc43760a29!2sBig+Cedar+Lodge+Registration!5e0!3m2!1sen!2sus!4v1528768780218" allowfullscreen></iframe>
+            </div>
+            <p class="text-center lead fontent">
+                Please also know that if you Google "Big Cedar Lodge", the default location Google gives you is not the best place to arrive at for this ceremony. "Big Cedar Lodge Registration" will bring you closest to the ceremony location.<br /><br />
+            </p>
+        </div><br />
+        <div class="container-fluid"><img class="img-responsive mainimg" src="images/triheartline.png" alt="ThreeHeartsDivider" alt="ThreeHeartsDivider"></div><br /><br />
+        <div class="container greenborderdiv" id="registry">
+            <h2 class="text-center">Wedding Registry</h2><br /><br />
+            <p class="text-center lead fontent">
+                It's here! You can find links to our Wedding Registries below!
+            </p>
+            <a class="text-center nav-link cust-nav-text linktext" href="https://www.crateandbarrel.com/gift-registry/heather-morris-and-jon-kasperan/r5857019">Crate&Barrel</a>
+            <a class="text-center nav-link cust-nav-text linktext" href="https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&inventoryCallEnabled=true&registryId=546107878&pwsurl=&searchParam=Kasperan">Bed Bath & Beyond</a>
+            <a class="text-center nav-link cust-nav-text linktext" href="https://smile.amazon.com/wedding/jon-kasperan-heather-morris-ridgedale-november-2018/registry/20XGA2L8ENJZ1">Amazon</a>
+        </div><br />
+        <div class="container-fluid"><img class="img-responsive mainimg" src="images/triheartline.png" alt="ThreeHeartsDivider" alt="ThreeHeartsDivider"></div><br /><br />
+        <div class="container yellowborderdiv" id="events">
+            <h2 class="text-center">Ceremony Events and Timings</h2><br /><br />
+            <p class="lead fontent">
+                The day of the ceremony will have many events to for us enjoy. Please check below for the event details of our big day:<br /><br /><br />
+            </p>
+            <h2 class="text-center">
+                Wedding Ceremony</p><br />
+                <p class="text-center lead fontent">
+                    Location:<br /><br />
+                    Garden Chapel at Big Cedar Lodge <br />
+                    612 Devil’s Pool Road <br />
+                    Ridgedale, MO 65739 <br /><br />
+                    Date: <br /><br />
+                    Saturday, November 3rd, 2018<br /><br />
+                    Times:<br /><br />
+                    Seating: 4:30pm – 5pm Central Time<br />
+                    Ceremony: 5pm – 6pm Central Time<br />
+                </p>
+                <p class="text-center lead fontent text-danger">
+                    Please understand that chapel seating will ONLY be between 4:30 and 5pm central time. Please arrive early to ensure that you will be seated.
+                </p><br />
+                <h2 class="text-center">
+                    Wedding Reception</p><br />
+                    <p class="text-center lead fontent">
+                        Location:<br /><br />
+                        Worman House Restaurant at Big Cedar Lodge  <br />
+                        612 Devil’s Pool Road <br />
+                        Ridgedale, MO 65739 <br /><br />
+                        Date: <br /><br />
+                        Saturday, November 3rd, 2018 (Immediately following the ceremony)<br /><br />
+                        Time:<br /><br />
+                        6:30pm – 1:00am Central Time<br /><br />
+        </div><br />
+        <div class="container-fluid"><img class="img-responsive mainimg" src="images/triheartline.png" alt="ThreeHeartsDivider" alt="ThreeHeartsDivider"></div><br /><br />
+        <div class="container greenborderdiv" id="accomodations">
+            <h2 class="text-center">Accommodations</h2><br /><br />
+            <p class="text-center lead fontent">
+                Big Cedar Lodge offers on-site lodging. Additionally, there are plenty of lodging options in the nearby Ridgedale area. Should you choose to take the journey with us, you can opt to reserve on-site lodging along with us, too! Please see accommodation contact details below!<br /><br />
+                If you wish to book lodging within the resort, please visit Big Cedar Lodge’s website or please call the number below. <br /><br />
+                Website: <a class="content-link text-light" href="https://reservations.bigcedar.com/">https://reservations.bigcedar.com/</a>
+                <br /><br />
+                Phone: (800) BC-LODGE
+                <br /><br />
+            </p>
+        </div><br />
+        <div class="container-fluid"><img class="img-responsive mainimg" src="images/triheartline.png" alt="ThreeHeartsDivider" alt="ThreeHeartsDivider"></div><br /><br />
+        <div class="container yellowborderdiv thing" id="pictures">
+            <h2 class="text-center">Post-Ceremony Pictures</h2><br /><br />
+            <p class="text-center lead fontent">
+                Once the ceremony is over, we will provide links to the pictures here!<br /><br />
+            </p>
+        </div><br />
+        <div class="container-fluid"><img class="img-responsive mainimg" src="images/triheartline.png" alt="ThreeHeartsDivider" alt="ThreeHeartsDivider"></div><br /><br />
+        <div class="container greenborderdiv" id="RSVP">
+            <h2 class="text-center">RSVP</h2><br /><br />
+            <p class="text-center lead fontent">You can choose to RSVP online once the invitations have been sent (and once the princess does some additional coding). Please check here again once you receive your invitation, which should be sometime in late August!</p><br />
+        </div><br />
+        <div class="container-fluid"><img class="img-responsive mainimg" src="images/triheartline.png" alt="ThreeHeartsDivider" alt="ThreeHeartsDivider"></div><br /><br />
+
+        <!-- This is the Modal for expanded About content-->
+        <div class="modal fade" id="readMore" tabindex="-1" role="dialog" aria-labelledby="readmoreModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content woodborderdiv">
+                    <div class="custModalTop">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5 class="modal-title leftabouttitle custModalText" id="readmoreModalLabel">The Princess</h5>
+
+                        <div class="modal-body">
+                            <p>
+                                I'd like to give you a warning up front that this is about to get extremely mushy. If you are not willing or prepared to read an excruciatingly sentimental love story, please stop here, because this synopsis has been cooked down to a mash of applesauce. Really. But, instead of me sitting here telling you just how sappy this story is, allow me to just tell you the story itself, and about how these two cool cats fell deeply in love. It's Jon and I, in case that wasn't made clear yet by this whole thing.<br /><br />
+
+                                When I met Jon for the first time, I quickly found that he and I had very similar interests, including a rare interest for a video game called “Phantasy Star Online 2”. For those who may be unaware, this video game was never released in the United States, so you can imagine my surprise when I find that one of my coworkers has also played this game. From there, we started to build a friendship upon other interests. We started to hang out more often, but of course it didn't stop there.<br /><br />
+
+                                Our engagement story starts with a walk through a park in Chicago. He knows how much I love birds, especially waterfowl. So, naturally, he took me to the spot where there we plenty of birds to be seen. There, we saw many different kinds of ducks, geese, and swans. In particular, there was a beautiful swan couple enjoying a beautiful spring day, just as we were. Jon told me that they were love birds, just as we were. He then presented me with the most beautiful ring that I (unknowingly) picked out during our trips to several jewelry stores in the weeks prior. It was the most wonderful moment of realization I have ever had, and I am so happy it brought us to where we are today.<br /><br />
+
+                                I have never met someone quite like him. Someone who loves as unconditionally as he does. He works along side me to help make me a better person, and I truly hope I have been able to do the same for him. He is my rock: a real foundation in my life that I can truly lean on. I'm also lucky to have met someone with such an amazing family, too. It has been one of the kindest, most welcoming families I have ever met, and for that I am truly grateful.<br /><br />
+
+                                I am so happy to be able to share my life with his, and now with you as you are reading about our journey. I know that our future together may not be the easiest path, but it certainly will be a path worth taking. I know that he and I will continue to work together to improve ourselves as individuals and as a couple.<br /><br />
+
+                                And so, perhaps, when a girl from Arkansas and guy from northwest Indiana meet for the first time in Connecticut and share such a rare interest, then a great relationship, at the very least, seems to be appropriate, and perhaps even destiny.<br /><br /><br /><br />
+
+                                Also, I'll try my best to get him to be better at video games. Cus like, I'm better than he is.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-custfooter">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- This is the Modal for the other expanded About content-->
+        <!-- BIG TODO: Make this dynamic-->
+        <div class="modal fade" id="readMore2" tabindex="-1" role="dialog" aria-labelledby="readmoreModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content woodborderdiv">
+                    <div class="custModalTop">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5 class="modal-title rightabouttitle custModalText" id="readmoreModalLabel">The Hero</h5>
+
+                        <div class="modal-body">
+                            <p>Hmmm… What to say as Heather has summed up how we met and how I proposed. It’s really funny how life throws you something when you never expect it. When I first met Heather, I never thought that we would ever be more than friends. However, slowly over time as we became better friends, I started to see that I had feelings for her. For instance, have you ever seen Heather when there are a flock of geese? She will proceed to put her hands over her mouth and jump up and down with glee. How about when she goes out of her way for any person she sees in need. Or did you know she is extremely shy to the point where she is afraid to talk to people. Despite this, she gives it her all to try to better herself and grow to be a better person. I have been here to see this intelligent, beautiful, shy, and caring woman grow even more and slowly over time realized that I had fallen in love with her. Looking back over the last two years, I am extremely happy that our paths crossed and can’t wait to journey together for the rest of eternity.</p>
+                        </div>
+                    </div>
+                    <div class="modal-custfooter">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--The most freightening bit starts here-->
+
+        <div class="container" id="test">
+            <h2 class="text-center">RSVP</h2><br /><br />
+            <p class="text-center lead fontent">
+                Check here for your name<br /><br />
+            </p>
+            <div class="form-group">
+                <label for="firstname">Registration Code:</label>
+                <input type="text" class="form-control" id="register" name="reg_code">
+            </div>
+            <div>
+                <button class="btn btn-primary" onClick="div_display()">RSVP</button>
+                <!--<a class="nav-link cust-nav-text" href="#" data-toggle="modal" data-target="#readMore">Read more</a>-->
+            </div>
+        </div><br /><br />
+
+        <!-- Modal -->
+        <div class="modal fade" id="rsvpModal" tabindex="-1" role="dialog" aria-labelledby="rsvpModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content woodborderdiv">
+                    <div class="custModalTop rsvpModalText">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5 class="modal-title rightabouttitle custModalText" id="readmoreModalLabel">RSVP</h5>
+                    </div>
+                    <div class="modal-body rsvpModalBodyText">
+                        Kindly respond by *date*.<br />
+                        *First Name* will join you in your adventure. <br />
+                        <form class="form" id="rsvpForm">
+                            <!--Guest1 info-->
+                            <div class="form-row imgthing">
+                                <div class="imgthing">
+                                    <img class="fairyimg" src="../images/ZeldaFairy.gif">
+                                </div>
+                                <div class="col" style="width:48px;">
+                                </div>
+                                <div class="col">
+                                    <label for="example-text-input" class="col-lx-9 col-form-label">Guest 1</label>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest1FirstName" placeholder="Guest 1's First Name">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest1LastName" placeholder="Guest 1's Last Name">
+                                    </div>
+                                </div>
+                                <div class="md-form form-group col">
+                                    <select class="form-control" id="Guest1Option">
+                                        <option hidden>Entree Selection</option>
+                                        <option>Beef</option>
+                                        <option>Chicken</option>
+                                        <option>Fish</option>
+                                        <option>Veg</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--Guest2 info-->
+                            <div class="form-row imgthing">
+                                <div class="imgthing">
+                                    <img class="fairyimg" src="../images/ZeldaFairy.gif">
+                                </div>
+                                <div class="col" style="width:48px;">
+                                </div>
+                                <div class="col">
+                                    <label for="example-text-input" class="col-lx-9 col-form-label">Guest 2</label>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest2FirstName" placeholder="Guest 2's First Name">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest2LastName" placeholder="Guest 2's Last Name">
+                                    </div>
+                                </div>
+                                <div class="md-form form-group col">
+                                    <select class="form-control" id="Guest2Option">
+                                        <option hidden>Entree Selection</option>
+                                        <option>Beef</option>
+                                        <option>Chicken</option>
+                                        <option>Fish</option>
+                                        <option>Veg</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--Guest3 info-->
+                            <div class="form-row imgthing">
+                                <div class="imgthing">
+                                    <img class="fairyimg" src="../images/ZeldaFairy.gif">
+                                </div>
+                                <div class="col" style="width:48px;">
+                                </div>
+                                <div class="col">
+                                    <label for="example-text-input" class="col-lx-9 col-form-label">Guest 3</label>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest3FirstName" placeholder="Guest 3's First Name">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest3LastName" placeholder="Guest 3's Last Name">
+                                    </div>
+                                </div>
+                                <div class="md-form form-group col">
+                                    <select class="form-control" id="Guest3Option">
+                                        <option hidden>Entree Selection</option>
+                                        <option>Beef</option>
+                                        <option>Chicken</option>
+                                        <option>Fish</option>
+                                        <option>Veg</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--Guest4 info-->
+                            <div class="form-row imgthing">
+                                <div class="imgthing">
+                                    <img class="fairyimg" src="../images/ZeldaFairy.gif">
+                                </div>
+                                <div class="col" style="width:48px;">
+                                </div>
+                                <div class="col">
+                                    <label for="example-text-input" class="col-lx-9 col-form-label">Guest 4</label>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest4FirstName" placeholder="Guest 4's First Name">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest4LastName" placeholder="Guest 4's Last Name">
+                                    </div>
+                                </div>
+                                <div class="md-form form-group col">
+                                    <select class="form-control" id="Guest4Option">
+                                        <option hidden>Entree Selection</option>
+                                        <option>Beef</option>
+                                        <option>Chicken</option>
+                                        <option>Fish</option>
+                                        <option>Veg</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--Guest5 info-->
+                            <div class="form-row imgthing">
+                                <div class="imgthing">
+                                    <img class="fairyimg" src="../images/ZeldaFairy.gif">
+                                </div>
+                                <div class="col" style="width:48px;">
+                                </div>
+                                <div class="col">
+                                    <label for="example-text-input" class="col-lx-9 col-form-label">Guest 5</label>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest5FirstName" placeholder="Guest 5's First Name">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest5LastName" placeholder="Guest 5's Last Name">
+                                    </div>
+                                </div>
+                                <div class="md-form form-group col">
+                                    <select class="form-control" id="Guest5Option">
+                                        <option hidden>Entree Selection</option>
+                                        <option>Beef</option>
+                                        <option>Chicken</option>
+                                        <option>Fish</option>
+                                        <option>Veg</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--Guest6 info-->
+                            <div class="form-row imgthing">
+                                <div class="imgthing">
+                                    <img class="fairyimg" src="../images/ZeldaFairy.gif">
+                                </div>
+                                <div class="col" style="width:48px;">
+                                </div>
+                                <div class="col">
+                                    <label for="example-text-input" class="col-lx-9 col-form-label">Guest 6</label>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest6FirstName" placeholder="Guest 6's First Name">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest6LastName" placeholder="Guest 6's Last Name">
+                                    </div>
+                                </div>
+                                <div class="md-form form-group col">
+                                    <select class="form-control" id="Guest6Option">
+                                        <option hidden>Entree Selection</option>
+                                        <option>Beef</option>
+                                        <option>Chicken</option>
+                                        <option>Fish</option>
+                                        <option>Veg</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--Guest2 info-->
+                            <div class="form-row imgthing">
+                                <div class="imgthing">
+                                    <img class="fairyimg" src="../images/ZeldaFairy.gif">
+                                </div>
+                                <div class="col" style="width:48px;">
+                                </div>
+                                <div class="col">
+                                    <label for="example-text-input" class="col-lx-9 col-form-label">Guest 7</label>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest7FirstName" placeholder="Guest 7's First Name">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest7LastName" placeholder="Guest 7's Last Name">
+                                    </div>
+                                </div>
+                                <div class="md-form form-group col">
+                                    <select class="form-control" id="Guest7Option">
+                                        <option hidden>Entree Selection</option>
+                                        <option>Beef</option>
+                                        <option>Chicken</option>
+                                        <option>Fish</option>
+                                        <option>Veg</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" onClick="return submitForm()">Submit RSVP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        function div_display() {
+            var registerValidation = document.getElementById("register").value;
+            if (registerValidation == "princesszelda") {
+                $('#rsvpModal').modal();
+            }
+            else {
+                alert("Invalid Code Provided");
+            }
+        }
+    </script>
+
+    <script>
+        function submitForm() {
+            var input = document.getElementById("Guest1FirstName").value;
+            var input2 = document.getElementById("Guest1LastName").value;
+            var input3 = document.getElementById("Guest1Option").value;
+            if ((input == "")||(input2 == "")||(input3=="Entree Selection")) {
+                alert("Please enter Guest 1's information");
+                return false;
+            }
+        }
+    </script>
+
+    <script>
+        function dbSearch() {
+            var input = document.getElementById("Guest1FirstName").value;
+            var input2 = document.getElementById("Guest1LastName").value;
+            var input3 = document.getElementById("Guest1Option").value;
+
+            var database = firebase.database().ref('users');
+            var newuser = database.push({ Guest1FirstName: input, Guest1LastName: input2, Guest1Option: input3 })
+            /*database.on('child_added', function (child) {
+              array.forEach(element => {
+
+              });
+              var childDataFname = child.val().firstname;
+              var childDataLname = child.val().lastname;
+              if((childDataFname === input2) && (childDataLname === input)){
+                alert("Hello, " + childDataFname + childDataLname + " was found!" + "!");
+              }
+              else {
+                alert("User was not found in the database");
+              }
+            });*/
+        }
+    </script>
+
+    <footer>
+        <!-- Pawprint -->
+        <div class="custom-footer text-center py-3">
+            Website created by the bride :
+            <a style="color: #F4D03F" href="https://portfolio-30ab8.firebaseapp.com/">Website</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script language="JavaScript" type="text/javascript">
+        $(".navbar-nav li a").click(function (event) {
+            $(".navbar-collapse").collapse('hide');
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html> 

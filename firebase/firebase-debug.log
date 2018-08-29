@@ -1,0 +1,89 @@
+[debug] [2018-06-02T15:30:04.598Z] ----------------------------------------------------------------------
+[debug] [2018-06-02T15:30:04.600Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cloud\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-06-02T15:30:04.600Z] CLI Version:   3.18.5
+[debug] [2018-06-02T15:30:04.600Z] Platform:      win32
+[debug] [2018-06-02T15:30:04.600Z] Node Version:  v8.11.2
+[debug] [2018-06-02T15:30:04.601Z] Time:          Sat Jun 02 2018 10:30:04 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-02T15:30:04.601Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-02T15:30:04.610Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-02T15:30:04.610Z] > authorizing via signed-in user
+[debug] [2018-06-02T15:30:04.612Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-06-02T15:30:04.612Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/FdvC9gkT4FHzWpnBWhtqEdYHhV4Ur2lLZqbiMyUiZIY',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Jun 02 2018 10:30:04 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-02T15:30:04.869Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-02T15:30:04.880Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/hyrulewedding-84f8b  
+  
+ Sat Jun 02 2018 10:30:04 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-02T15:30:05.312Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-02T15:30:05.313Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/hyrulewedding-84f8b/tokens  
+  
+ Sat Jun 02 2018 10:30:05 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-02T15:30:05.720Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-02T15:30:05.720Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/hyrulewedding-84f8b  
+  
+ Sat Jun 02 2018 10:30:05 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-02T15:30:06.069Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\cloud\OneDrive\Desktop\firebase'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-06-02T15:30:06.748Z] Fetching environment
+[debug] [2018-06-02T15:30:06.750Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/765068419511:getServerAppConfig  
+  
+ Sat Jun 02 2018 10:30:06 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-02T15:30:06.750Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/765068419511/clients/_:getWebAppConfig  
+  
+ Sat Jun 02 2018 10:30:06 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-02T15:30:07.120Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-06-02T15:30:07.163Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-02T15:30:07.163Z] Starting @google-cloud/functions-emulator
+[debug] [2018-06-02T15:30:08.706Z] Parsing function triggers
+[debug] [2018-06-02T15:38:08.180Z] ----------------------------------------------------------------------
+[debug] [2018-06-02T15:38:08.182Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cloud\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-06-02T15:38:08.183Z] CLI Version:   3.18.5
+[debug] [2018-06-02T15:38:08.183Z] Platform:      win32
+[debug] [2018-06-02T15:38:08.183Z] Node Version:  v8.11.2
+[debug] [2018-06-02T15:38:08.183Z] Time:          Sat Jun 02 2018 10:38:08 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-02T15:38:08.183Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-02T15:38:08.191Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-02T15:38:08.192Z] > authorizing via signed-in user
+[debug] [2018-06-02T15:38:08.193Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/hyrulewedding-84f8b  
+  
+ Sat Jun 02 2018 10:38:08 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-02T15:38:08.571Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-02T15:38:08.572Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/hyrulewedding-84f8b/tokens  
+  
+ Sat Jun 02 2018 10:38:08 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-02T15:38:08.922Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-02T15:38:08.923Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/hyrulewedding-84f8b  
+  
+ Sat Jun 02 2018 10:38:08 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-02T15:38:09.255Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\cloud\OneDrive\Desktop\firebase'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-06-02T15:38:09.978Z] Fetching environment
+[debug] [2018-06-02T15:38:09.980Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/765068419511:getServerAppConfig  
+  
+ Sat Jun 02 2018 10:38:09 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-02T15:38:09.981Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/765068419511/clients/_:getWebAppConfig  
+  
+ Sat Jun 02 2018 10:38:09 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-02T15:38:10.326Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-02T15:38:10.327Z] Starting @google-cloud/functions-emulator
+[debug] [2018-06-02T15:38:10.349Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[debug] [2018-06-02T15:38:11.866Z] Parsing function triggers

@@ -285,33 +285,55 @@
                         Kindly respond by *date*.<br />
                         *First Name* will join you in your adventure. <br />
                         <form class="form" id="rsvpForm">
+                                                        <div class="form-row imgthing">
+                                <div style="width:48px;">
+                                </div>
+                                <div class="col">
+                                    <label class="col-lx-9 col-form-label"></label>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <label class="col-lx-9 col-form-label">Guest's First Name</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="md-form">
+                                        <label class="col-lx-9 col-form-label">Guest's Last Name</label>
+                                    </div>
+                                </div>
+                                   <div class="col">
+                                    <div class="md-form">
+                                        <label class="col-lx-9 col-form-label">Guest's Entree Selection</label>
+                                    </div>
+                                </div>
+                            </div>
                             <!--Guest1 info-->
                             <div class="form-row imgthing">
                                 <div class="imgthing">
                                     <img class="fairyimg" src="../images/ZeldaFairy.gif">
                                 </div>
-                                <div class="col" style="width:48px;">
+                                <div style="width:48px;">
                                 </div>
                                 <div class="col">
                                     <label for="example-text-input" class="col-lx-9 col-form-label">Guest 1</label>
                                 </div>
                                 <div class="col">
                                     <div class="md-form">
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest1FirstName" placeholder="Guest 1's First Name">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest1FirstName" required>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="md-form">
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest1LastName" placeholder="Guest 1's Last Name">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest1LastName" required>
                                     </div>
                                 </div>
                                 <div class="md-form form-group col">
-                                    <select class="form-control" id="Guest1Option">
-                                        <option hidden>Entree Selection</option>
-                                        <option>Beef</option>
-                                        <option>Chicken</option>
-                                        <option>Fish</option>
-                                        <option>Veg</option>
+                                    <select class="form-control" id="Guest1Option" required>
+                                        <option hidden value=""></option>
+                                        <option value="Beef">Beef</option>
+                                        <option value="Chicken">Chicken</option>
+                                        <option value="Fish">Fish</option>
+                                        <option value="Veg">Veg</option>
                                     </select>
                                 </div>
                             </div>
@@ -320,28 +342,28 @@
                                 <div class="imgthing">
                                     <img class="fairyimg" src="../images/ZeldaFairy.gif">
                                 </div>
-                                <div class="col" style="width:48px;">
+                                <div style="width:48px;">
                                 </div>
                                 <div class="col">
                                     <label for="example-text-input" class="col-lx-9 col-form-label">Guest 2</label>
                                 </div>
                                 <div class="col">
                                     <div class="md-form">
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest2FirstName" placeholder="Guest 2's First Name">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest2FirstName">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="md-form">
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest2LastName" placeholder="Guest 2's Last Name">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest2LastName">
                                     </div>
                                 </div>
                                 <div class="md-form form-group col">
                                     <select class="form-control" id="Guest2Option">
-                                        <option hidden>Entree Selection</option>
-                                        <option>Beef</option>
-                                        <option>Chicken</option>
-                                        <option>Fish</option>
-                                        <option>Veg</option>
+                                        <option hidden value=""></option>
+                                        <option value="Beef">Beef</option>
+                                        <option value="Chicken">Chicken</option>
+                                        <option value="Fish">Fish</option>
+                                        <option value="Veg">Veg</option>
                                     </select>
                                 </div>
                             </div>
@@ -350,28 +372,28 @@
                                 <div class="imgthing">
                                     <img class="fairyimg" src="../images/ZeldaFairy.gif">
                                 </div>
-                                <div class="col" style="width:48px;">
+                                <div style="width:48px;">
                                 </div>
                                 <div class="col">
                                     <label for="example-text-input" class="col-lx-9 col-form-label">Guest 3</label>
                                 </div>
                                 <div class="col">
                                     <div class="md-form">
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest3FirstName" placeholder="Guest 3's First Name">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest3FirstName">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="md-form">
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest3LastName" placeholder="Guest 3's Last Name">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest3LastName">
                                     </div>
                                 </div>
                                 <div class="md-form form-group col">
                                     <select class="form-control" id="Guest3Option">
-                                        <option hidden>Entree Selection</option>
-                                        <option>Beef</option>
-                                        <option>Chicken</option>
-                                        <option>Fish</option>
-                                        <option>Veg</option>
+                                        <option hidden value=""></option>
+                                        <option value="Beef">Beef</option>
+                                        <option value="Chicken">Chicken</option>
+                                        <option value="Fish">Fish</option>
+                                        <option value="Veg">Veg</option>
                                     </select>
                                 </div>
                             </div>
@@ -380,28 +402,28 @@
                                 <div class="imgthing">
                                     <img class="fairyimg" src="../images/ZeldaFairy.gif">
                                 </div>
-                                <div class="col" style="width:48px;">
+                                <div style="width:48px;">
                                 </div>
                                 <div class="col">
                                     <label for="example-text-input" class="col-lx-9 col-form-label">Guest 4</label>
                                 </div>
                                 <div class="col">
                                     <div class="md-form">
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest4FirstName" placeholder="Guest 4's First Name">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest4FirstName">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="md-form">
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest4LastName" placeholder="Guest 4's Last Name">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest4LastName">
                                     </div>
                                 </div>
                                 <div class="md-form form-group col">
                                     <select class="form-control" id="Guest4Option">
-                                        <option hidden>Entree Selection</option>
-                                        <option>Beef</option>
-                                        <option>Chicken</option>
-                                        <option>Fish</option>
-                                        <option>Veg</option>
+                                        <option hidden value=""></option>
+                                        <option value="Beef">Beef</option>
+                                        <option value="Chicken">Chicken</option>
+                                        <option value="Fish">Fish</option>
+                                        <option value="Veg">Veg</option>
                                     </select>
                                 </div>
                             </div>
@@ -410,28 +432,28 @@
                                 <div class="imgthing">
                                     <img class="fairyimg" src="../images/ZeldaFairy.gif">
                                 </div>
-                                <div class="col" style="width:48px;">
+                                <div style="width:48px;">
                                 </div>
                                 <div class="col">
                                     <label for="example-text-input" class="col-lx-9 col-form-label">Guest 5</label>
                                 </div>
                                 <div class="col">
                                     <div class="md-form">
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest5FirstName" placeholder="Guest 5's First Name">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest5FirstName">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="md-form">
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest5LastName" placeholder="Guest 5's Last Name">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest5LastName">
                                     </div>
                                 </div>
                                 <div class="md-form form-group col">
                                     <select class="form-control" id="Guest5Option">
-                                        <option hidden>Entree Selection</option>
-                                        <option>Beef</option>
-                                        <option>Chicken</option>
-                                        <option>Fish</option>
-                                        <option>Veg</option>
+                                        <option hidden value=""></option>
+                                        <option value="Beef">Beef</option>
+                                        <option value="Chicken">Chicken</option>
+                                        <option value="Fish">Fish</option>
+                                        <option value="Veg">Veg</option>
                                     </select>
                                 </div>
                             </div>
@@ -440,28 +462,28 @@
                                 <div class="imgthing">
                                     <img class="fairyimg" src="../images/ZeldaFairy.gif">
                                 </div>
-                                <div class="col" style="width:48px;">
+                                <div style="width:48px;">
                                 </div>
                                 <div class="col">
                                     <label for="example-text-input" class="col-lx-9 col-form-label">Guest 6</label>
                                 </div>
                                 <div class="col">
                                     <div class="md-form">
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest6FirstName" placeholder="Guest 6's First Name">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest6FirstName">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="md-form">
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest6LastName" placeholder="Guest 6's Last Name">
+                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest6LastName">
                                     </div>
                                 </div>
                                 <div class="md-form form-group col">
                                     <select class="form-control" id="Guest6Option">
-                                        <option hidden>Entree Selection</option>
-                                        <option>Beef</option>
-                                        <option>Chicken</option>
-                                        <option>Fish</option>
-                                        <option>Veg</option>
+                                        <option hidden value=""></option>
+                                        <option value="Beef">Beef</option>
+                                        <option value="Chicken">Chicken</option>
+                                        <option value="Fish">Fish</option>
+                                        <option value="Veg">Veg</option>
                                     </select>
                                 </div>
                             </div>
@@ -470,36 +492,37 @@
                                 <div class="imgthing">
                                     <img class="fairyimg" src="../images/ZeldaFairy.gif">
                                 </div>
-                                <div class="col" style="width:48px;">
+                                <div style="width:48px;">
                                 </div>
                                 <div class="col">
                                     <label for="example-text-input" class="col-lx-9 col-form-label">Guest 7</label>
                                 </div>
                                 <div class="col">
                                     <div class="md-form">
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest7FirstName" placeholder="Guest 7's First Name">
+                                        <input type="text" class="form-control mb-2 mr-sm-2 guest-7" id="Guest7FirstName" name="Guest7FirstName">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="md-form">
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="Guest7LastName" placeholder="Guest 7's Last Name">
+                                        <input type="text" class="form-control mb-2 mr-sm-2 guest-7" id="Guest7LastName" name="Guest7LastName">
                                     </div>
                                 </div>
                                 <div class="md-form form-group col">
                                     <select class="form-control" id="Guest7Option">
-                                        <option hidden>Entree Selection</option>
-                                        <option>Beef</option>
-                                        <option>Chicken</option>
-                                        <option>Fish</option>
-                                        <option>Veg</option>
+                                        <option hidden value=""></option>
+                                        <option value="Beef">Beef</option>
+                                        <option value="Chicken">Chicken</option>
+                                        <option value="Fish">Fish</option>
+                                        <option value="Veg">Veg</option>
                                     </select>
                                 </div>
                             </div>
+                            <button type="button" class="btn btn-primary" onClick="validate()">Submit RSVP</button>
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" onClick="return submitForm()">Submit RSVP</button>
+                        <button type="submit" class="btn btn-primary">no Submit RSVP</button>
                     </div>
                 </div>
             </div>
@@ -507,7 +530,118 @@
 
     </div>
 
+    <script>
+        function validate() {
+            var Guest1input = document.getElementById("Guest1FirstName").value;
+            var Guest1input2 = document.getElementById("Guest1LastName").value;
+            var Guest1input3 = document.getElementById('Guest1Option').options[document.getElementById('Guest1Option').selectedIndex].text;
 
+            var Guest7input = document.getElementById("Guest7FirstName").value;
+            var Guest7input2 = document.getElementById("Guest7LastName").value;
+            var Guest7input3 = document.getElementById('Guest7Option').options[document.getElementById('Guest7Option').selectedIndex].text;
+
+            var Guest2input = document.getElementById("Guest2FirstName").value;
+            var Guest2input2 = document.getElementById("Guest2LastName").value;
+            var Guest2input3 = document.getElementById('Guest2Option').options[document.getElementById('Guest2Option').selectedIndex].text;
+
+            var Guest3input = document.getElementById("Guest3FirstName").value;
+            var Guest3input2 = document.getElementById("Guest3LastName").value;
+            var Guest3input3 = document.getElementById('Guest3Option').options[document.getElementById('Guest3Option').selectedIndex].text;
+
+            var Guest4input = document.getElementById("Guest4FirstName").value;
+            var Guest4input2 = document.getElementById("Guest4LastName").value;
+            var Guest4input3 = document.getElementById('Guest4Option').options[document.getElementById('Guest4Option').selectedIndex].text;
+
+            var Guest5input = document.getElementById("Guest5FirstName").value;
+            var Guest5input2 = document.getElementById("Guest5LastName").value;
+            var Guest5input3 = document.getElementById('Guest5Option').options[document.getElementById('Guest5Option').selectedIndex].text;
+
+            var Guest6input = document.getElementById("Guest6FirstName").value;
+            var Guest6input2 = document.getElementById("Guest6LastName").value;
+            var Guest6input3 = document.getElementById('Guest6Option').options[document.getElementById('Guest6Option').selectedIndex].text;
+
+
+            //guest 1
+            if (Guest1input == "" && Guest1input2 == "" && Guest1input3 == "") {
+                //do nothing
+            }
+            else if (Guest1input == "" || Guest1input2 == "" || Guest1input3 == "") {
+                alert("At least one value for Guest 1 is invalid. Please check entries for Guest 1.");
+            }
+            else if (Guest1input && Guest1input2 && Guest1input3) {
+                //do nothing
+            }
+
+            //guest 2
+            if (Guest2input == "" && Guest2input2 == "" && Guest2input3 == "") {
+                //do nothing
+            }
+            else if (Guest2input == "" || Guest2input2 == "" || Guest2input3 == "") {
+                alert("At least one value for Guest 2 is invalid. Please check entries for Guest 2.");
+            }
+            else if (Guest2input && Guest2input2 && Guest2input3) {
+                //do nothing
+            }
+
+            //guest 3
+            if (Guest3input == "" && Guest3input2 == "" && Guest3input3 == "") {
+                //do nothing
+            }
+            else if (Guest3input == "" || Guest3input2 == "" || Guest3input3 == "") {
+                alert("At least one value for Guest 2 is invalid. Please check entries for Guest 2.");
+            }
+            else if (Guest3input && Guest3input2 && Guest3input3) {
+                //do nothing
+            }
+
+            //guest 4
+            if (Guest4input == "" && Guest4input2 == "" && Guest4input3 == "") {
+                //do nothing
+            }
+            else if (Guest4input == "" || Guest4input2 == "" || Guest4input3 == "") {
+                alert("At least one value for Guest 2 is invalid. Please check entries for Guest 2.");
+            }
+            else if (Guest4input && Guest4input2 && Guest4input3) {
+                //do nothing
+            }
+
+            //guest 5
+            if (Guest5input == "" && Guest5input2 == "" && Guest5input3 == "") {
+                //do nothing
+            }
+            else if (Guest5input == "" || Guest5input2 == "" || Guest5input3 == "") {
+                alert("At least one value for Guest 2 is invalid. Please check entries for Guest 2.");
+            }
+            else if (Guest5input && Guest5input2 && Guest5input3) {
+                //do nothing
+            }
+
+            //guest 6
+            if (Guest6input == "" && Guest6input2 == "" && Guest6input3 == "") {
+                //do nothing
+            }
+            else if (Guest6input == "" || Guest6input2 == "" || Guest6input3 == "") {
+                alert("At least one value for Guest 2 is invalid. Please check entries for Guest 2.");
+            }
+            else if (Guest6input && Guest6input2 && Guest6input3) {
+                //do nothing
+            }
+
+            //guest 7
+            if (Guest7input == "" && Guest7input2 == "" && Guest7input3 == "") {
+                //do nothing
+            }
+            else if (Guest7input == "" || Guest7input2 == "" || Guest7input3 == "") {
+                alert("At least one value for Guest 7 is invalid. Please check entries for Guest 7.");
+            }
+            else if (Guest7input && Guest7input2 && Guest7input3){
+                //do nothing
+            }
+
+            var database = firebase.database().ref('users');
+            var newuser = database.push({ Guest1FirstName: Guest1input, Guest1LastName: Guest1input2, Guest1Option: Guest1input3, Guest2FirstName: Guest2input, Guest2LastName: Guest2input2, Guest2Option: Guest2input3, Guest3FirstName: Guest3input, Guest3LastName: Guest3input2, Guest3Option: Guest3input3, Guest4FirstName: Guest4input, Guest4LastName: Guest4input2, Guest4Option: Guest4input3, Guest5FirstName: Guest5input, Guest5LastName: Guest5input2, Guest5Option: Guest5input3, Guest6FirstName: Guest6input, Guest6LastName: Guest6input2, Guest6Option: Guest6input3, Guest7FirstName: Guest7input, Guest7LastName: Guest7input2, Guest7Option: Guest7input3 })
+        };
+    </script>
 
     <script>
         function div_display() {
@@ -522,22 +656,10 @@
     </script>
 
     <script>
-        function submitForm() {
-            var input = document.getElementById("Guest1FirstName").value;
-            var input2 = document.getElementById("Guest1LastName").value;
-            var input3 = document.getElementById("Guest1Option").value;
-            if ((input == "")||(input2 == "")||(input3=="Entree Selection")) {
-                alert("Please enter Guest 1's information");
-                return false;
-            }
-        }
-    </script>
-
-    <script>
         function dbSearch() {
-            var input = document.getElementById("Guest1FirstName").value;
-            var input2 = document.getElementById("Guest1LastName").value;
-            var input3 = document.getElementById("Guest1Option").value;
+            var input = document.getElementById("Guest7FirstName").value;
+            var input2 = document.getElementById("Guest7LastName").value;
+            var input3 = document.getElementById("Guest7Option").value;
 
             var database = firebase.database().ref('users');
             var newuser = database.push({ Guest1FirstName: input, Guest1LastName: input2, Guest1Option: input3 })

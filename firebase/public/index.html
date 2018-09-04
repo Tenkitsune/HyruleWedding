@@ -208,6 +208,18 @@
         </div>
         <div class="container-fluid"><img class="img-responsive mainimg" src="images/triheartline.png" alt="ThreeHeartsDivider" alt="ThreeHeartsDivider"></div><br /><br />
 
+        <script>
+            function div_display() {
+                var registerValidation = document.getElementById("register").value;
+                if (registerValidation === "PRINCESSZELDA" || registerValidation === "princesszelda") {
+                    $('#rsvpModal').modal();
+                }
+                else {
+                    alert("Invalid Code Provided");
+                }
+            }
+        </script>
+
         <!-- This is the Modal for expanded About content-->
         <div class="modal fade" id="readMore" tabindex="-1" role="dialog" aria-labelledby="readmoreModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -721,18 +733,6 @@
             $('#rsvpModal').modal('hide');
             $('#thanksModal').modal();
         };
-    </script>
-
-    <script>
-        function div_display() {
-            var registerValidation = document.getElementById("register").value;
-            if (registerValidation == "princesszelda" || "PRINCESSZELDA") {
-                $('#rsvpModal').modal();
-            }
-            else {
-                alert("Invalid Code Provided");
-            }
-        }
     </script>
 
     <script>

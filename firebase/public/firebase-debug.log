@@ -1,40 +1,49 @@
-[debug] [2018-08-27T02:31:34.763Z] ----------------------------------------------------------------------
-[debug] [2018-08-27T02:31:34.765Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cloud\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-08-27T02:31:34.766Z] CLI Version:   3.18.5
-[debug] [2018-08-27T02:31:34.766Z] Platform:      win32
-[debug] [2018-08-27T02:31:34.766Z] Node Version:  v8.11.2
-[debug] [2018-08-27T02:31:34.766Z] Time:          Sun Aug 26 2018 21:31:34 GMT-0500 (Central Daylight Time)
-[debug] [2018-08-27T02:31:34.766Z] ----------------------------------------------------------------------
+[debug] [2018-09-03T08:16:08.335Z] ----------------------------------------------------------------------
+[debug] [2018-09-03T08:16:08.337Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cloud\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-09-03T08:16:08.337Z] CLI Version:   3.18.5
+[debug] [2018-09-03T08:16:08.337Z] Platform:      win32
+[debug] [2018-09-03T08:16:08.337Z] Node Version:  v8.11.2
+[debug] [2018-09-03T08:16:08.337Z] Time:          Mon Sep 03 2018 03:16:08 GMT-0500 (Central Daylight Time)
+[debug] [2018-09-03T08:16:08.338Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-08-27T02:31:34.778Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-08-27T02:31:34.779Z] > authorizing via signed-in user
-[debug] [2018-08-27T02:31:34.781Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/hyrulewedding-84f8b  
+[debug] [2018-09-03T08:16:08.347Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-03T08:16:08.348Z] > authorizing via signed-in user
+[debug] [2018-09-03T08:16:08.350Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-09-03T08:16:08.350Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/FdvC9gkT4FHzWpnBWhtqEdYHhV4Ur2lLZqbiMyUiZIY',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Sep 03 2018 03:16:08 GMT-0500 (Central Daylight Time)
+[debug] [2018-09-03T08:16:08.604Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-03T08:16:08.610Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/hyrulewedding-84f8b  
   
- Sun Aug 26 2018 21:31:34 GMT-0500 (Central Daylight Time)
-[debug] [2018-08-27T02:31:35.019Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-27T02:31:35.019Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/hyrulewedding-84f8b/tokens  
+ Mon Sep 03 2018 03:16:08 GMT-0500 (Central Daylight Time)
+[debug] [2018-09-03T08:16:08.877Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-03T08:16:08.877Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/hyrulewedding-84f8b/tokens  
   
- Sun Aug 26 2018 21:31:35 GMT-0500 (Central Daylight Time)
-[debug] [2018-08-27T02:31:35.339Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-27T02:31:35.340Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/hyrulewedding-84f8b  
+ Mon Sep 03 2018 03:16:08 GMT-0500 (Central Daylight Time)
+[debug] [2018-09-03T08:16:09.191Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-03T08:16:09.192Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/hyrulewedding-84f8b  
   
- Sun Aug 26 2018 21:31:35 GMT-0500 (Central Daylight Time)
-[debug] [2018-08-27T02:31:35.745Z] <<< HTTP RESPONSE 200
+ Mon Sep 03 2018 03:16:09 GMT-0500 (Central Daylight Time)
+[debug] [2018-09-03T08:16:09.482Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from 'C:\Users\cloud\OneDrive\Desktop\firebase'...
 [info] 
 [info] i  functions: Preparing to emulate functions.
-[debug] [2018-08-27T02:31:36.418Z] Fetching environment
-[debug] [2018-08-27T02:31:36.421Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/765068419511:getServerAppConfig  
+[debug] [2018-09-03T08:16:10.208Z] Fetching environment
+[debug] [2018-09-03T08:16:10.210Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/765068419511:getServerAppConfig  
   
- Sun Aug 26 2018 21:31:36 GMT-0500 (Central Daylight Time)
-[debug] [2018-08-27T02:31:36.421Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/765068419511/clients/_:getWebAppConfig  
+ Mon Sep 03 2018 03:16:10 GMT-0500 (Central Daylight Time)
+[debug] [2018-09-03T08:16:10.211Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/765068419511/clients/_:getWebAppConfig  
   
- Sun Aug 26 2018 21:31:36 GMT-0500 (Central Daylight Time)
-[debug] [2018-08-27T02:31:36.807Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-27T02:31:36.807Z] Starting @google-cloud/functions-emulator
-[debug] [2018-08-27T02:31:36.828Z] <<< HTTP RESPONSE 200
+ Mon Sep 03 2018 03:16:10 GMT-0500 (Central Daylight Time)
+[debug] [2018-09-03T08:16:10.600Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-03T08:16:10.616Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-03T08:16:10.616Z] Starting @google-cloud/functions-emulator
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
 
-[debug] [2018-08-27T02:31:38.366Z] Parsing function triggers
+[debug] [2018-09-03T08:16:12.159Z] Parsing function triggers

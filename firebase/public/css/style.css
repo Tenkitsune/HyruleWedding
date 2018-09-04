@@ -206,3 +206,15 @@ h1 {
 div.imgthing:hover .fairyimg {
     display: inline;
 }
+
+.mainmenutitle {
+    font-family: TriforceFont;
+    color: wheat;
+    font-size: 35px;
+}
+
+.menusubtitle {
+    font-family: TriforceFont;
+    color: green;
+    font-size: 30px;
+}

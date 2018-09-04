@@ -192,8 +192,20 @@
         <div class="container-fluid"><img class="img-responsive mainimg" src="images/triheartline.png" alt="ThreeHeartsDivider" alt="ThreeHeartsDivider"></div><br /><br />
         <div class="container greenborderdiv" id="RSVP">
             <h2 class="text-center">RSVP</h2><br /><br />
-            <p class="text-center lead fontent">You can choose to RSVP online once the invitations have been sent (and once the princess does some additional coding). Please check here again once you receive your invitation, which should be sometime in late August!</p><br />
-        </div><br />
+            <p class="text-center lead fontent">
+                Welcome to the online RSVP! If you wish to fill out the RSVP online, please enter your registration code in the field below! The registration code is provided on your RSVP card that you received in the mail.<br /><br />
+                We will request for your first and last name for seating arrangements. Additionally, we will ask for your preferred entree of choice so that we can submit entree orders ahead of time. We recommend you take a look at the various, delicious options available to you before filling out the RSVP.
+                <a class="content-link" href="#" data-toggle="modal" data-target="#entreeMenu">Click here</a> to view the full menu, including the various entree options available!<br /><br />
+                If you have any questions or concerns about the RSVP online or mail entries, please contact us: <a href="mailto:jkaspera@gmail.com">jkaspera@gmail.com</a>
+            </p>
+            <div class="form-group">
+                <label for="firstname">Registration Code:</label>
+                <input type="text" class="form-control" id="register" name="reg_code">
+            </div>
+            <div>
+                <button class="btn btn-primary" onClick="div_display()">RSVP</button>
+            </div><br />
+        </div>
         <div class="container-fluid"><img class="img-responsive mainimg" src="images/triheartline.png" alt="ThreeHeartsDivider" alt="ThreeHeartsDivider"></div><br /><br />
 
         <!-- This is the Modal for expanded About content-->
@@ -254,22 +266,81 @@
             </div>
         </div>
 
-        <!--The most freightening bit starts here-->
 
-        <div class="container" id="test">
-            <h2 class="text-center">RSVP</h2><br /><br />
-            <p class="text-center lead fontent">
-                Check here for your name<br /><br />
-            </p>
-            <div class="form-group">
-                <label for="firstname">Registration Code:</label>
-                <input type="text" class="form-control" id="register" name="reg_code">
+        <!-- Entree Menu Modal-->
+        <div class="modal fade" id="entreeMenu" tabindex="-1" role="dialog" aria-labelledby="readmoreModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content woodborderdiv">
+                    <div class="custModalTop">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5 class="modal-title mainmenutitle custModalText" id="readmoreModalLabel">Dinner Menu</h5>
+
+                        <div class="modal-body">
+                            <p class="fontent">
+                                Reception Starters, Appetizers, and Sides are all pre-selected. <br /><br />
+                            </p>
+                            <p class="menusubtitle custModalText">Starter </p>
+                            <b class="fontent">Roasted, Pickled & Fresh Garden Vegetables</b><br />
+                            <p>Yogurt Herb Dip & Buttermilk Ranch</p><br /><br />
+
+                            <p class="menusubtitle custModalText">Hors D'Oeuvres</p>
+                            <p class="fontent">Braised Short Rubs with Caramelized Onion and Buttermilk Blue Cheese on Fry Bread</p><br />
+                            <p class="fontent">Boursin & Prosciutto Arancini</p><br />
+                            <p class="fontent">Hot Smoked Salmon Egg Roll with Plum Sauce</p><br /><br />
+
+                            <p class="menusubtitle custModalText">Entree Options</p>
+                            <p class="fontent">You may have your choice of one of the following entrees: </p><br /><br />
+                            <b class="fontent">Grilled Filet of Beef </b><br />
+                            <p>Green Peppercorn & Bourbon Pan sauce</p><br /><br />
+                            <b class="fontent">Grilled Atlantic Salmon </b><br />
+                            <p>Glazed with Brown Sugar & Locally Harvested Honey</p><br /><br />
+                            <b class="fontent">Roasted All Natural Chicken Breast</b><br />
+                            <p>Stuffed with Sun-dried Tomato, Spinach, Boursin Cheese & Capacola Ham</p><br /><br />
+                            <b class="fontent">Sweet Pea & Asparagus Risotto (Vegan)</b><br />
+                            <p>Topped with Arugula & Heirloom Tomatoes</p><br /><br />
+
+                            <p class="menusubtitle custModalText">Sides</p>
+                            <p class="text-center">(The vegan entree does not come with sides)</p><br />
+                            <b class="fontent">Honey Balsamic Brusselss Sprouts with Roasted Butternut Squash</b><br /><br />
+                            <b class="fontent">Caramelized Cauliflower with Herbs & Capers</b><br /><br /><br />
+
+                            <p class="menusubtitle custModalText">Additional Menu Items:</p>
+                            <p class="fontent text-center">Mixed Bread Basket</p><br />
+                            <p class="fontent text-center">Freshly Ground Dubuque Regular and Decaffeinated Coffee</p><br />
+                            <p class="fontent text-center">Mighty Leaf Specialty Hot Teas, Brewed Iced Tea, Water</p><br /><br />
+                            <p class="fontent text-center">Cash Bar will be available</p><br /><br />
+                        </div>
+                    </div>
+                    <div class="modal-custfooter">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <button class="btn btn-primary" onClick="div_display()">RSVP</button>
-                <!--<a class="nav-link cust-nav-text" href="#" data-toggle="modal" data-target="#readMore">Read more</a>-->
+        </div>
+
+        <!-- Thanks Modal-->
+        <div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="readmoreModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content woodborderdiv">
+                    <div class="custModalTop">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5 class="modal-title mainmenutitle custModalText" id="readmoreModalLabel">Thank You!</h5>
+
+                        <div class="modal-body">
+                            Thank you for submitting your RSVP online! If you have any questions or concerns regarding your submission, please contact us: <a href="mailto:jkaspera@gmail.com">jkaspera@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="modal-custfooter">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
-        </div><br /><br />
+        </div>
+
 
         <!-- Modal -->
         <div class="modal fade" id="rsvpModal" tabindex="-1" role="dialog" aria-labelledby="rsvpModalLabel" aria-hidden="true">
@@ -282,10 +353,9 @@
                         <h5 class="modal-title rightabouttitle custModalText" id="readmoreModalLabel">RSVP</h5>
                     </div>
                     <div class="modal-body rsvpModalBodyText">
-                        Kindly respond by *date*.<br />
-                        *First Name* will join you in your adventure. <br />
+                        If you would like to join us in our adventure, please submit a completed form by Saturday, September 22nd, 2018 with each guest's name and entree of choice.<br /><br />
                         <form class="form" id="rsvpForm">
-                                                        <div class="form-row imgthing">
+                            <div class="form-row imgthing">
                                 <div style="width:48px;">
                                 </div>
                                 <div class="col">
@@ -301,7 +371,7 @@
                                         <label class="col-lx-9 col-form-label">Guest's Last Name</label>
                                     </div>
                                 </div>
-                                   <div class="col">
+                                <div class="col">
                                     <div class="md-form">
                                         <label class="col-lx-9 col-form-label">Guest's Entree Selection</label>
                                     </div>
@@ -522,7 +592,6 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">no Submit RSVP</button>
                     </div>
                 </div>
             </div>
@@ -563,10 +632,12 @@
 
             //guest 1
             if (Guest1input == "" && Guest1input2 == "" && Guest1input3 == "") {
-                //do nothing
+                alert("Guest 1's information is required. Please check entries for Guest 1.");
+                return;
             }
             else if (Guest1input == "" || Guest1input2 == "" || Guest1input3 == "") {
                 alert("At least one value for Guest 1 is invalid. Please check entries for Guest 1.");
+                return;
             }
             else if (Guest1input && Guest1input2 && Guest1input3) {
                 //do nothing
@@ -578,6 +649,7 @@
             }
             else if (Guest2input == "" || Guest2input2 == "" || Guest2input3 == "") {
                 alert("At least one value for Guest 2 is invalid. Please check entries for Guest 2.");
+                return;
             }
             else if (Guest2input && Guest2input2 && Guest2input3) {
                 //do nothing
@@ -588,7 +660,8 @@
                 //do nothing
             }
             else if (Guest3input == "" || Guest3input2 == "" || Guest3input3 == "") {
-                alert("At least one value for Guest 2 is invalid. Please check entries for Guest 2.");
+                alert("At least one value for Guest 3 is invalid. Please check entries for Guest 3.");
+                return;
             }
             else if (Guest3input && Guest3input2 && Guest3input3) {
                 //do nothing
@@ -599,7 +672,8 @@
                 //do nothing
             }
             else if (Guest4input == "" || Guest4input2 == "" || Guest4input3 == "") {
-                alert("At least one value for Guest 2 is invalid. Please check entries for Guest 2.");
+                alert("At least one value for Guest 4 is invalid. Please check entries for Guest 4.");
+                return;
             }
             else if (Guest4input && Guest4input2 && Guest4input3) {
                 //do nothing
@@ -610,7 +684,8 @@
                 //do nothing
             }
             else if (Guest5input == "" || Guest5input2 == "" || Guest5input3 == "") {
-                alert("At least one value for Guest 2 is invalid. Please check entries for Guest 2.");
+                alert("At least one value for Guest 5 is invalid. Please check entries for Guest 5.");
+                return;
             }
             else if (Guest5input && Guest5input2 && Guest5input3) {
                 //do nothing
@@ -621,7 +696,8 @@
                 //do nothing
             }
             else if (Guest6input == "" || Guest6input2 == "" || Guest6input3 == "") {
-                alert("At least one value for Guest 2 is invalid. Please check entries for Guest 2.");
+                alert("At least one value for Guest 6 is invalid. Please check entries for Guest 6.");
+                return;
             }
             else if (Guest6input && Guest6input2 && Guest6input3) {
                 //do nothing
@@ -633,20 +709,24 @@
             }
             else if (Guest7input == "" || Guest7input2 == "" || Guest7input3 == "") {
                 alert("At least one value for Guest 7 is invalid. Please check entries for Guest 7.");
+                return;
             }
-            else if (Guest7input && Guest7input2 && Guest7input3){
+            else if (Guest7input && Guest7input2 && Guest7input3) {
                 //do nothing
             }
 
             var database = firebase.database().ref('users');
             var newuser = database.push({ Guest1FirstName: Guest1input, Guest1LastName: Guest1input2, Guest1Option: Guest1input3, Guest2FirstName: Guest2input, Guest2LastName: Guest2input2, Guest2Option: Guest2input3, Guest3FirstName: Guest3input, Guest3LastName: Guest3input2, Guest3Option: Guest3input3, Guest4FirstName: Guest4input, Guest4LastName: Guest4input2, Guest4Option: Guest4input3, Guest5FirstName: Guest5input, Guest5LastName: Guest5input2, Guest5Option: Guest5input3, Guest6FirstName: Guest6input, Guest6LastName: Guest6input2, Guest6Option: Guest6input3, Guest7FirstName: Guest7input, Guest7LastName: Guest7input2, Guest7Option: Guest7input3 })
+
+            $('#rsvpModal').modal('hide');
+            $('#thanksModal').modal();
         };
     </script>
 
     <script>
         function div_display() {
             var registerValidation = document.getElementById("register").value;
-            if (registerValidation == "princesszelda") {
+            if (registerValidation == "princesszelda" || "PRINCESSZELDA") {
                 $('#rsvpModal').modal();
             }
             else {
